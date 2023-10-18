@@ -120,8 +120,8 @@ int main(void)
 	// Read ADC value
 	uint32_t adc_value = pollADC();
 
-	// Convert ADC value to string (assuming a reasonable buffer size)
-	char adc_str[32]; // Adjust the buffer size accordingly
+	// Convert ADC value to string
+	char adc_str[32]; 
 	sprintf(adc_str, "ADC Value: %lu", adc_value);
 
 	writeLCD(adc_str); // Write the ADC value to the LCD
